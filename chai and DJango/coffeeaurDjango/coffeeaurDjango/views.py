@@ -15,4 +15,5 @@ def about(request):
 
 #this will be contact page of our django page
 def contact(request):
-    return HttpResponse("contact page")
+    #return HttpResponse("contact page")
+    return render (request, 'website/contact.html')

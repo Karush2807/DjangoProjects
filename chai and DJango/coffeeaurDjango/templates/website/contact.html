@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="{% static 'styleC.css' %}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>Company</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Information</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-form">
+            <h1>Title lorem ipsum</h1>
+            <p>Maecenas accumsan dictum mauris, ut posuere eros varius id. Maecenas tempus augue placerat nisi dapibus aliquam.</p>
+            <form>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">send</button>
+            </form>
+            <div class="contact-info">
+                <p>email@example.com</p>
+                <p>+00 123 4567890</p>
+                <p>Company name<br>
+                123 Street Name<br>
+                City Name,<br>
+                State, Country, 12345</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Company</p>
+        <p>email@example.com</p>
+        <p>123 Street Name, City Name, State, Country, 12345</p>
+        <p>Disclaimer</p>
+    </footer>
+</body>
+</html>

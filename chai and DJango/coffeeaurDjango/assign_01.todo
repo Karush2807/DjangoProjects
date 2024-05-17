@@ -1,10 +1,10 @@
 Project--> Coffee aur Django:
     assign-01--> adding contcact page, about us page:
 
-        ☐ 1. creating a contact page
-        ☐ 2. creating a about us page
-        ☐ 3. render the above in view.py file
-        ☐ 4. create a url for the above pages
-        ☐ 5. create a link in the home page to navigate to the above pages
-        ☐ 6. add css to all the above pages!!
+        ✔ 1. creating a contact page @done (5/17/2024, 1:00:42 PM)
+        ✔ 2. creating a about us page @done (5/17/2024, 1:00:30 PM)
+        ✔ 3. render the above in view.py file @done (5/17/2024, 1:00:32 PM)
+        ✔ 4. create a url for the above pages @done (5/17/2024, 1:00:33 PM)
+        ✔ 5. create a link in the home page to navigate to the above pages @done (5/17/2024, 1:00:35 PM)
+        ✔ 6. add css to all the above pages!! @done (5/17/2024, 1:00:38 PM)
 

@@ -10,7 +10,8 @@ def home(request):
 
 #this will be about page of our django page
 def about(request):
-    return HttpResponse("about page")
+    #return HttpResponse("about page")
+    return render (request, 'website/about.html' )
 
 #this will be contact page of our django page
 def contact(request):

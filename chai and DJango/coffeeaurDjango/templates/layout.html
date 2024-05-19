@@ -11,9 +11,11 @@
     Default Value
     {% endblock %}
     <link rel="stylesheet" href="{% static 'style.css' %}">
+    {% tailwind_css %}
+
 </head>
 <body>
-    <nav>this is our navbar</nav>
+    <nav>navbar</nav>
     {% block content %}{% endblock %}
 </body>
 </html>

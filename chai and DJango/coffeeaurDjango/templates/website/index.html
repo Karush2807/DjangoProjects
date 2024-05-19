@@ -1,24 +1,7 @@
-{% load static %}
+{% extends 'layout.html' %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee and Django</title>
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-    <link rel="stylesheet" href="{% static 'styleN.css' %}">
-    <link rel="stylesheet" href="{% static 'animation.css' %}">
-</head>
-<body>
-    <h1>Coffee and Date</h1>
-    <nav class="navbar fade-in">
-        <ul class="nav-list">
-            <li class="nav-item"><a href="{% url 'home' %}" class="nav-link bounce">Home Page</a></li>
-            <li class="nav-item"><a href="{% url 'about' %}" class="nav-link bounce">About Page</a></li>
-            <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link bounce">Contact Page</a></li>
-            <li class="nav-item"><a href="find-service.html" class="nav-link bounce">Find Service Near Me</a></li>
-        </ul>
-    </nav>
-</body>
-</html>
+{% block title %}
+
+<h1 class="bg-blue-500 text-3xl">Coffee aur Code | Home Page</h1>
+
+{% endblock %}

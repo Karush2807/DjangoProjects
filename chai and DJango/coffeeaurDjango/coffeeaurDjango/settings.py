@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "tailwind",
     "theme",
-    "coffeeaurDjango",
+    "coffee",
     #"django_browser_reload",
 ]
 

@@ -1,3 +1,6 @@
+ye ek common file hai, jo hr jagah use hoge!! 
+
+
 {% load static tailwind_tags %}
 {% load static %}
 
@@ -6,10 +9,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>This is our navbar!!</title>
-    {% block title %}
-    
-    {% endblock %}
+    <title>
+        {% block title %} # iss block ka name title hoga
+        Default Value
+        {% endblock %}
+
+    </title>
     <link rel="stylesheet" href="{% static 'style.css' %}">
     
     {% tailwind_css %}
@@ -17,8 +22,9 @@
 
 </head>
 <body>
-    <nav>Navbar</nav>
-    {% block content %}
+    <nav>This is our navbar!!</nav>
+    {% block content %} #iss block ka name contact hoga
+    
     {% endblock %}
 </body>
 </html>

@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     "tailwind",
     "theme",
     "coffeeaurDjango",
-    #"django",
+    #"django_browser_reload",
 ]
 
 TAILWIND_APP_NAME='theme'

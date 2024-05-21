@@ -40,9 +40,7 @@ INSTALLED_APPS = [
     "tailwind",
     "theme",
     "coffeeaurDjango",
-    
-    
-    "django_browser_reload",
+    #"django",
 ]
 
 TAILWIND_APP_NAME='theme'
@@ -58,7 +56,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 
-    "django_browser_reload.middleware.BrowserReloaderMiddleware",
+    #"django_browser_reload.middleware.BrowserReloaderMiddleware",
 ]
 
 ROOT_URLCONF = "coffeeaurDjango.urls"

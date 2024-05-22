@@ -15,6 +15,7 @@ class coffee_varieties(models.Model):
     image=models.ImageField(upload_to='coffees/') #ese hi images upload hoti hai
     date=models.DateTimeField(default=timezone.now)
     type= models.CharField(max_length=3, choices=COFFEE_TYPE_CHOICE) #to ye bs upar wali choices lega
+    description=models.TextField(default='') #this is a text field
 
     def __str__(self):
         return self.name

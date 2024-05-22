@@ -6,6 +6,22 @@ Home Page
 
 {% block content %}6%
 
-<h1 class="bg-yellow-500 text-3xl">All coffe for You</h1>
+<h1>All Coffee For You</h1>
 
+<div class="grid grid-cols-3 gap-4 m-4">
+
+{% for COD in coffees  %}
+    <div class="bg-blue-600 p-5 rounded">
+        
+        <img class="rounded shadow-lg" src="{{COD.image.url}}" alt="">
+        <h3 class="text-3xl font-bold">{{COD.name}}</h3>
+        <a href=""></a>
+    </div>
+
+
+
+{% endfor %}
+
+</div>
 {% endblock %}
+

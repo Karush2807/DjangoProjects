@@ -10,8 +10,4 @@ urlpatterns = [
     path('<int:coffee_id>/', views.coffee_detail, name='coffee_detail'),
 
 
-
-
-    
-    
 ]

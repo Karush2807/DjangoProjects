@@ -10,5 +10,5 @@ def all_coffee(request):
 
 def coffee_detail(request, coffee_id):
     coffee=get_object_or_404(coffee_varieties, pk=coffee_id) #ye db pr query krega, arryas aayenge
-    return render(request, 'coffee/description.html', {'coffee':coffee}, {'coffee_id':coffee})
+    return render(request, 'coffee/coffee_details.html', {'coffee':coffee})
 

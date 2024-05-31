@@ -1,6 +1,7 @@
 #production level pr bhi jo hm models bnayenge vo, app pr hi bnegi!!
 from django.db import models
 from django.utils import timezone
+from django.contrib.auth.models import User
 
 # Create your models here.
 class coffee_varieties(models.Model):
@@ -20,3 +21,18 @@ class coffee_varieties(models.Model):
     def __str__(self):
         return self.name
 
+
+# one to many models!!
+
+class coffee_review(models.Model):
+    coffee=models.ForeignKey(coffee_varieties, on_delete=models.CASCADE) #ye coffee_varieties se connect krega, on-delet decide krea ki review delete hoga to coffee kya hoga
+    user=models.ForeignKey(User, on_delete=models.CASCADE) #ye user se connect krega
+    date=models.DateTimeField(default=timezone.now)
+    rating=models.IntegerField(default=1)
+    review=models.TextField(default='')
+
+    def __str__(self):
+        return self.coffee.name + ' - ' + self.user.username
+
+
+# many to many models

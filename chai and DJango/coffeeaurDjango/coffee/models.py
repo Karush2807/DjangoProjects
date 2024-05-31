@@ -36,3 +36,24 @@ class coffee_review(models.Model):
 
 
 # many to many models
+
+class Store_Name(models.Model):
+    name=models.CharField(max_length=100)
+    location=models.CharField(max_length=100)
+    coff_varieties=models.ManyToManyField(coffee_varieties, related_name='stores') #ye many to many relation bna dega, related_name se store kis coffee ka hai vo pta chalega
+
+    def __str__(self):
+        return self.name
+    
+# ye models bnane ke baad, hmne migrations bnani hai, jo db mein tables bnayegi
+
+# one to one models
+
+class coff_certificates(models.Model):
+    coffee=models.OneToOneField(coffee_varieties, on_delete=models.CASCADE) #ye one to one relation bna dega
+    certificate_number=models.CharField(max_length=100)
+    issed_date=models.DateTimeField(default=timezone.now)
+    valid_till=models.DateTimeField(default=timezone.now)
+
+    def __str__(self):
+        return f"Certificate for {self.coffee.name}"

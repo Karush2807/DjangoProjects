@@ -15,7 +15,7 @@ class CoffeeVarietiesAdmin(admin.ModelAdmin):
 
 class StoreNameAdmin(admin.ModelAdmin):
     list_display=['name', 'location']
-    #filter_horizontal=('coffee_varieties',)
+    filter_horizontal=('coff_varieties', )
 
 class CoffeeCertificatesAdmin(admin.ModelAdmin):
     list_display=['certificate_number', 'issed_date', 'valid_till']

@@ -1,12 +1,90 @@
-{% extends 'layout.html' %}
+{% load static %}
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coffee Haven</title>
+        <link  rel="stylesheet" href="{% static 'home_page.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-{% block title %}
-Home Page
-{% endblock %}
-
-{% block content %}6%
-
-<h1 class="bg-yellow-500 text-3xl">Coffee aur Code | Home Page</h1>
-<p class="text-center w-5rem" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque aspernatur iure laudantium mollitia adipisci eos illum cum natus asperiores dolor perferendis odio, vitae fuga recusandae odit dignissimos nisi beatae itaque sunt qui eligendi. Veritatis nisi fuga inventore ad quo exercitationem dignissimos consequatur amet impedit accusantium explicabo error sunt consequuntur dolorem quidem officiis nemo totam, rem repellat! Laudantium, quas repudiandae modi minus laboriosam vitae vero sit ex sapiente. Amet, vitae quasi. Cum est aperiam dolorum quod praesentium facilis atque ut ullam, unde possimus labore dolorem ducimus error corporis totam placeat nulla accusantium voluptates nihil. In, maiores itaque. Architecto nesciunt iusto commodi.</p>
-
-{% endblock %}
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <h1 class="logo">Coffee Haven</h1>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="container">
+            <section class="hero">
+                <div class="hero-text">
+                    <h2>Welcome to Coffee Haven</h2>
+                    <p>Best cappuccino in the market, loved by many startup founders during their early days.</p>
+                    <a href="#" class="btn">Explore Our Menu</a>
+                </div>
+                <div class="hero-image">
+                    <img src="images/coffucp.jpg" alt="Coffee cup">
+                </div>
+            </section>
+            <section class="features">
+                <div class="feature">
+                    <img src="feature1.jpg" alt="Cappuccino">
+                    <h3>Best Cappuccino</h3>
+                    <p>Experience the perfect blend of espresso and milk, crafted by our expert baristas.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="feature">
+                    <img src="feature2.jpg" alt="Cozy ambiance">
+                    <h3>Cozy Ambiance</h3>
+                    <p>A perfect place to brainstorm, work, and relax with your favorite cup of coffee.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="feature">
+                    <img src="feature3.jpg" alt="Startup discussions">
+                    <h3>Startup Hub</h3>
+                    <p>Join the community of innovators who have shared their ideas and grown their startups here.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container footer-content">
+                <div class="footer-about">
+                    <h3>Coffee Haven</h3>
+                    <p>Your perfect spot to relax, work, and enjoy the best coffee in town.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@coffeehaven.com</p>
+                    <p>Phone: +123-456-7890</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Coffee Haven. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+    </html>

@@ -40,7 +40,7 @@ class coffee_review(models.Model):
 class Store_Name(models.Model):
     name=models.CharField(max_length=100)
     location=models.CharField(max_length=100)
-    coff_varieties=models.ManyToManyField(coffee_varieties, related_name='stores') #ye many to many relation bna dega, related_name se store kis coffee ka hai vo pta chalega
+    coff_varieties=models.ManyToManyField(coffee_varieties, related_name='stores') #ye many to many relation bna dega, related_name se store kis coffee ka hai vo pta chalega ISKE BASIS PR FILTER LGAYA  HAI HMNE
 
     def __str__(self):
         return self.name

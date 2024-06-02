@@ -1,7 +1,53 @@
 {% extends 'layout.html' %}
 
 {% block content %}
+    <style>
+        /* Custom CSS for form elements */
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
 
-testing... testing... testing...
+        /* Style for form inputs */
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f8f8f8; /* Add background color */
+            color: #555; /* Add text color */
+        }
 
+        /* Style for submit button */
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+    testing... testing... testing...
+    <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">Search Button</button>
+    </form>
+{% if stores %}
+    <h2>Stores Available</h2>
+    <ul>
+        {% for store in stores %}
+        
+        <li>{{store.name}} - {{store.location}}</li>
+        
+        {% endfor %}
+    </ul>
+{% endif %}
 {% endblock %}

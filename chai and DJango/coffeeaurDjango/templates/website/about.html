@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business Landing Page</title>
-    <link rel="stylesheet" href="{% static 'styleA.css' %}">
+    <link rel="stylesheet" href="{% static 'about_page.css' %}">
 </head>
 <body>
     <header>
@@ -14,7 +14,6 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
-                
             </ul>
         </nav>
         <div class="company-logo">
@@ -24,12 +23,12 @@
     <main>
         <section class="hero">
             <div class="content">
-                <h1>Business</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quae ut commodi hic nemo suscipit distinctio quasi, aspernatur dolore nihil mollitia nesciunt accusantium maiores fugiat error ea earum numquam, natus nulla, modi corrupti repudiandae. Exercitationem dolorum quasi magni assumenda tempora velit asperiores quos ratione. Quisquam aliquam deleniti blanditiis dignissimos ratione, molestiae consequuntur excepturi veritatis, aliquid totam saepe dicta nesciunt! Perferendis non reiciendis dolorem obcaecati doloribus ipsum hic ipsam explicabo numquam dolore quam, quos et corrupti, possimus asperiores fuga exercitationem quod, magnam minus tenetur quas laborum. Iste iusto perspiciatis ea! Dolorem, quam! Quo id vero aspernatur reprehenderit eligendi! Consectetur, qui nesciunt!</p>
-                <button>Search</button>
+                <h1>Welcome to <span class="highlight">Coffee Haven</span></h1>
+                <p>Discover the perfect blend of taste and aroma.</p>
+                <button>Explore Now</button>
             </div>
             <div class="image">
-                <img src="https://img.freepik.com/free-photo/smiling-business-people-with-tablet-laptop_1262-19253.jpg?size=338&ext=jpg" alt="Business People">
+                <img src="{% static 'business_people.jpg' %}" alt="Business People">
             </div>
         </section>
     </main>

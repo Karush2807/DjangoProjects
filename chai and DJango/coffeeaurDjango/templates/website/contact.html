@@ -6,50 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
     <link rel="stylesheet" href="{% static 'styleC.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <span>Company</span>
+            <span>Coffee Haven</span>
         </div>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
+                <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
-                <
             </ul>
         </nav>
     </header>
     <main>
         <section class="contact-form">
-            <h1>Title lorem ipsum</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo minus nam dolore suscipit? Exercitationem recusandae minus voluptates quidem quisquam pariatur placeat dolores maiores, inventore saepe architecto magnam! Nisi praesentium dolorem, dolores totam expedita fuga aperiam minima accusamus perspiciatis nemo aliquid nostrum placeat eius! Autem aut a nemo esse dolore cum. Ex eos eveniet at assumenda nulla soluta. Nesciunt at reiciendis illo asperiores quas fuga, enim voluptate molestias soluta, neque quidem? Dolore blanditiis omnis rerum ut quam, veritatis voluptate consectetur facilis, porro perspiciatis, quo officiis in quibusdam. Delectus illum tempora reiciendis totam, asperiores vero. Harum accusantium modi, nulla deserunt laborum debitis?</p>
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Whether you have a question about our coffee, feedback, or just want to say hi, feel free to reach out to us.</p>
             <form>
                 <input type="text" name="name" placeholder="Name" required>
                 <input type="email" name="email" placeholder="Email" required>
                 <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">send</button>
+                <button type="submit">Send</button>
             </form>
             <div class="contact-info">
-                <p>email@example.com</p>
-                <p>+00 123 4567890</p>
-                <p>Company name<br>
-                123 Street Name<br>
-                City Name,<br>
-                State, Country, 12345</p>
+                <p><i class="fas fa-envelope"></i> email@example.com</p>
+                <p><i class="fas fa-phone"></i> +00 123 4567890</p>
+                <p><i class="fas fa-map-marker-alt"></i> Coffee Haven<br>
+                    123 Street Name<br>
+                    City Name,<br>
+                    State, Country, 12345</p>
+                <p><i class="fas fa-clock"></i> Office Hours:<br>
+                    Mon-Fri: 8am - 8pm<br>
+                    Sat-Sun: 9am - 5pm</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <p>Company</p>
-        <p>email@example.com</p>
+        <p>&copy; 2024 Coffee Haven. All rights reserved.</p>
+        <p><a href="mailto:email@example.com">email@example.com</a></p>
         <p>123 Street Name, City Name, State, Country, 12345</p>
-        <p>Disclaimer</p>
+        <p><a href="#">Disclaimer</a></p>
     </footer>
 </body>
 </html>
-
-
-
-

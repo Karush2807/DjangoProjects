@@ -1,6 +1,11 @@
-from django import forms
-from .models import coffee_varieties #kyunki isi model se data lena hai, nd saari varieties isi mein available hai
+from django import forms #imported the form class of Django
+from .models import coffee_varieties #coffee varieties model, consists of the necessary detials required in form submission
 
-class CoffeeVarietyForm(forms.Form):
-    coff_var= forms.ModelChoiceField(queryset=coffee_varieties.objects.all(),
-                                    label="Select Coffee Variety") #queryset=coffee_varieties.objects.all() is used to get all the data from the model
+class CoffeeVarietyForm(forms.Form): #new model class created
+    
+    
+    # Dropdown field for selecting a coffee variety
+    coff_var = forms.ModelChoiceField(
+        queryset=coffee_varieties.objects.all(),
+        label="Select Coffee Variety"
+    )

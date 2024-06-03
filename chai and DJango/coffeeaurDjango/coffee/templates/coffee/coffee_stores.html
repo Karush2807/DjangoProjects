@@ -37,7 +37,7 @@
     testing... testing... testing...
     <form method="POST">
         {% csrf_token %}
-        {{form.as_p}}
+        {{form.as_p}}  {% comment %}will render all the form fields inside paragraph tags. {% endcomment %}
         <button type="submit">Search Button</button>
     </form>
 {% if stores %}

@@ -4,6 +4,7 @@ from django.utils import timezone
 from django.contrib.auth.models import User
 
 # Create your models here.
+#this model will be used in the form creation as it contain all the necessary fields
 class coffee_varieties(models.Model):
     COFFEE_TYPE_CHOICE=[
         ('CAP', 'Capachino'),
